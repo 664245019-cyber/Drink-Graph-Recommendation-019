@@ -71,7 +71,7 @@ def show_image(path):
 
 
 # ---------- Hero + สถิติ ----------
-st.markdown('<div class="hero"><h1>🧋 Drink Graph</h1>'
+st.markdown('<div class="hero"><h1> Drink Recommendation</h1>'
             '<p>แนะนำเครื่องดื่มจากเพื่อนของคุณ ด้วย Neo4j Graph Database</p></div>', unsafe_allow_html=True)
 s = db.stats()
 for col, (k, label) in zip(st.columns(4), [("users", "👤 คน"), ("drinks", "🥤 เมนู"),
