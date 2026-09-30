@@ -78,7 +78,16 @@ for col, (k, label) in zip(st.columns(4), [("users", "👤 คน"), ("drinks", 
                                            ("friends", "🤝 ความเป็นเพื่อน"), ("orders", "🧾 ออเดอร์")]):
     col.markdown(f'<div class="stat"><b>{s[k]}</b><span>{label}</span></div>', unsafe_allow_html=True)
 st.write("")
+# --- ส่วนแสดงชื่อผู้ส่งงาน (ไว้บนสุดของ Sidebar) ---
+st.sidebar.markdown("""
+ผู้จัดทำ: นายคณิศร จันทรสูตร
 
+
+รหัส: 664245019
+
+""", unsafe_allow_html=True)
+
+st.sidebar.divider()
 page = st.sidebar.radio("เมนู", ["🔍 แนะนำเครื่องดื่ม", "👥 จัดการคน & เพื่อน",
                                  "🥤 จัดการเมนู & ออเดอร์", "🕸️ กราฟความสัมพันธ์"])
 users = db.users()
