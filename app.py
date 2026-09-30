@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image, ImageOps
 from neo4j_service import Neo4jService
 
-st.set_page_config(page_title="Drink Graph", page_icon="🧋", layout="wide")
+st.set_page_config(page_title="Drink Recommendation", page_icon="", layout="wide")
 
 st.markdown("""
 <style>
