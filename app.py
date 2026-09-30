@@ -8,7 +8,12 @@ st.set_page_config(page_title="Drink Graph", page_icon="🧋", layout="wide")
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
-html, body, .stApp, .stApp * {font-family:'Sarabun',sans-serif;}
+html, body, .stApp, p, h1, h2, h3, h4, h5, h6, label, li, td, th, input, textarea, select, button,
+[data-testid="stMarkdownContainer"] *, [data-testid="stSidebar"] label, .stTabs button *, .stToast *
+{font-family:'Sarabun',sans-serif;}
+/* คืนฟอนต์ไอคอนของ Streamlit (กันชื่อไอคอนโผล่เป็นข้อความ) */
+[data-testid="stIconMaterial"], span[class*="material-symbols"], span[class*="material-icons"]
+{font-family:'Material Symbols Rounded','Material Icons' !important;}
 .stApp {background:linear-gradient(135deg,#fff8f1 0%,#fdeff7 50%,#eef1ff 100%); color:#2b2350;}
 [data-testid="stHeader"] {background:transparent;}
 [data-testid="stSidebar"] {background:linear-gradient(180deg,#2b2350,#5b2c83);}
