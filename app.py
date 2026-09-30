@@ -43,7 +43,7 @@ if menu == "🎯 หน้าแนะนำเครื่องดื่ม (R
         recs = db.run_query(rec_query, {"username": selected_user})
         
         if recs:
-            st.success(พบเมนูแนะนำจำนวน {len(recs)} รายการ!")
+            st.success(f"พบเมนูแนะนำจำนวน {len(recs)} รายการ!")
             
             # แสดงผลแบบ Grid Columns
             cols = st.columns(3)
