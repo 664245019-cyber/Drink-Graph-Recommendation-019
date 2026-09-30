@@ -4,7 +4,7 @@ import streamlit as st
 class Neo4jService:
     def __init__(self):
         # ข้อมูลการเชื่อมต่อ Neo4j Aura ของคุณ
-        uri = "neo4j+s://4cd28f11.databases.neo4j.io"
+        uri = "neo4j+s://4cd28f11.databases.neo4j.io:7687"
         user = "4cd28f11"
         password = "8tAWX2hiF80MjrMPxBVLwPLatJnFIVdYMIDFLHcexBU"
             
