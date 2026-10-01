@@ -115,7 +115,7 @@ if page.startswith("🔍"):
             st.markdown(f'<span class="price">฿{r["price"]}</span>', unsafe_allow_html=True)
             st.markdown('<div style="min-height:4.2rem;margin:6px 0">เพื่อนที่สั่ง: ' + pills(r["by"]) + "</div>",
                         unsafe_allow_html=True)
-            if st.button("🥤 ฉันสั่งเมนูนี้แล้ว", key=f"rec_{me}_{r['name']}"):
+            if st.button("🥤 สั่งเมนูนี้", key=f"rec_{me}_{r['name']}"):
                 db.add_order(me, r["name"])
                 done(f"บันทึกออเดอร์ {r['name']} ให้ {me} แล้ว")
 
